@@ -7,18 +7,18 @@ import Footer from '../components/Footer'
 
 function Home() {
   return (
-    <>
+    <div className='p-[20px]'>
       {/* Header */}
       <Header />
       {/* Search */}
       <Search />
       {/* IntroPost */}
-      <IntroPost />
+      {/* <IntroPost /> */}
       {/* Blogs */}
-      <Blogs />
+      {/* <Blogs /> */}
       {/* Footer */}
-      <Footer />
-    </>
+      {/* <Footer /> */}
+    </div>
   )
 }
 
