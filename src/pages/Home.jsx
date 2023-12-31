@@ -1,23 +1,26 @@
 import React from 'react'
-import Header from '../components/Header'
 import Search from '../components/Search'
 import IntroPost from '../components/IntroPost'
 import Blogs from '../components/Blogs'
-import Footer from '../components/Footer'
+import GlobalData from '../assets/blogpost_data.json'
+
 
 function Home() {
+  const PostsData = GlobalData.blogposts;
+
+  // console.log(GlobalData.blogposts.length);
+  // console.log(PostsData);
+
   return (
-    <div className='p-[20px]'>
-      {/* Header */}
-      <Header />
+    <div>
       {/* Search */}
       <Search />
       {/* IntroPost */}
       {/* <IntroPost /> */}
+      {PostsData.length>0 ? <IntroPost PostData={PostsData[0]} /> :null}
       {/* Blogs */}
-      {/* <Blogs /> */}
-      {/* Footer */}
-      {/* <Footer /> */}
+      {/* <Blogs />   */}
+      {PostsData.length>0 ? <Blogs PostData={PostsData} /> :null}
     </div>
   )
 }

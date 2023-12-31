@@ -1,0 +1,28 @@
+#container_logo {
+  padding: 2em 0;
+}
+
+#banner_home {
+  width: 95%;
+  max-width: 930px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+#section_title {
+  width: 95%;
+  margin: 0 auto;
+  padding: 1em 0;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+#intro_post_container {
+  max-width: 930px;
+  margin: 0 auto;
+}
+
+#blogs_container {
+  max-width: 930px;
+  margin: 0 auto;
+}/*# sourceMappingURL=MainStyles.css.map */
